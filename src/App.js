@@ -1,8 +1,9 @@
-import { useEffect } from "react";
-
+import React, { useState, useEffect } from "react";
+import "./App.css";
+import SearchIcon from "./search.svg";
 // 65875f04
 
-const API_URL = "http://www.omdb.com?apikey=65875f04";
+const API_URL = "http://www.omdbapi.com?apikey=65875f04";
 
 const App = () => {
   const searchMovies = async (title) => {
